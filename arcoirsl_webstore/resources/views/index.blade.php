@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>arcoirsl</title>
 
+    <link href="../css/normalize.css" rel="stylesheet">
     <link href="../css/tailwind.css" rel="stylesheet">
     <link href="../css/app.css" rel="stylesheet">
 
@@ -14,8 +15,7 @@
 
 <body>
 
-    <button class="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">...</button>
-
+    <a href="http://goo">wqeqw</a>
 
     <h1 class="text-3xl font-bold underline">
         hello junjieli
