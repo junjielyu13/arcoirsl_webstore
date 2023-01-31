@@ -69,3 +69,35 @@
     width: 100%;
     background-color: pink;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    background-color: var(--main-color-grey);
+}
+
+.footer-info {
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    border-bottom: 2px solid #fff;
+}
+
+.footer-word {
+    color: var(--main-color-blue);
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
