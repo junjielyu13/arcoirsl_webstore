@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>arcoirsl</title>
 
+    <link href="../css/app.css" rel="stylesheet">
     <link href="../css/normalize.css" rel="stylesheet">
     <link href="../css/tailwind.css" rel="stylesheet">
-    <link href="../css/app.css" rel="stylesheet">
 
 </head>
 
