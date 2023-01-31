@@ -1,4 +1,4 @@
-/* npx tailwindcss -i ./resources/tailwind/tailwind.css -o ./resources/css/tailwind.css --watch */
+/* npx tailwindcss -i ./resources/tailwind/tailwind.css -o ./public/css/tailwind.css --watch */
 
 @tailwind base;
 @tailwind components;
