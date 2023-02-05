@@ -25,7 +25,6 @@ return new class extends Migration
             $table->decimal('standard_price',5,2);
             $table->integer('stock');
             $table->string('main_image_url');
-            $table->charset('utf8mb4');
             $table->timestamps();
         });
     }
