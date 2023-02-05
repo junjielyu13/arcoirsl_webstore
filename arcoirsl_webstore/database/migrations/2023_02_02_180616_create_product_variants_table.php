@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('product_variants', function (Blueprint $table) {
             $table->id();
+            $table->string('parent_child')->nullable();
+            $table->string('parent_sku')->nullable();
+            $table->string('relationship_type')->nullable();
+            $table->string('variation_theme')->nullable();
             $table->timestamps();
         });
     }

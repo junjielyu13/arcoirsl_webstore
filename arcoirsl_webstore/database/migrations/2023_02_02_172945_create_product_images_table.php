@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('product_images', function (Blueprint $table) {
             $table->id();
+            $table->string('other_image_url1')->nullable();
+            $table->string('other_image_url2')->nullable();
+            $table->string('other_image_url3')->nullable();
+            $table->string('other_image_url4')->nullable();
+            $table->string('other_image_url5')->nullable();
             $table->timestamps();
         });
     }

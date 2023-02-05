@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('product_info', function (Blueprint $table) {
             $table->id();
+            $table->string('update_delete')->nullable()->default('update');
+            $table->string('product_description')->nullable();
             $table->timestamps();
         });
     }

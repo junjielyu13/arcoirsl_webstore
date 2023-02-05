@@ -20,9 +20,12 @@ return new class extends Migration
             $table->string('item_name');
             $table->string('external_product_id');
             $table->string('external_product_id_type');
-            $table->int('unit_count');
-            $table->string('SKU');
-
+            $table->integer('unit_count')->default(10);
+            $table->string('unit_count_type');
+            $table->decimal('standard_price',5,2);
+            $table->integer('stock');
+            $table->string('main_image_url');
+            $table->charset('utf8mb4');
             $table->timestamps();
         });
     }
