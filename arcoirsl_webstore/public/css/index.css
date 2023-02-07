@@ -61,3 +61,86 @@
     background-repeat: no-repeat;
     background-size: 100% 800px;
 }
+
+.container-collection {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.collection-title {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.collection-title-text {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.collection-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.collection-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    height: 450px;
+    margin: 20px;
+}
+
+.item-img {
+    margin-top: 20px;
+    width: 90%;
+    height: 66%;
+    background-image: url("../img/principal.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.item-info {
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-info-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(46, 46, 45);
+}
+
+.item-info-price {
+    font-size: 16px;
+    color: rgb(45, 119, 153);
+}
+
+.item-button {
+    display: flex;
+    margin-top: 20px;
+    width: 160px;
+    height: 40px;
+    background-color: rgb(89, 153, 153);
+    font-size: 16px;
+    align-items: center; /* vertical-align to center */
+    justify-content: center; /* [    xxx    ] */
+}
