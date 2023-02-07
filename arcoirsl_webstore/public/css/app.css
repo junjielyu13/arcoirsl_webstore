@@ -89,9 +89,11 @@
 }
 
 .container {
-    height: 300px;
-    width: 100%;
-    background-color: --context-color;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--context-color);
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
