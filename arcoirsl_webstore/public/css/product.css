@@ -174,3 +174,37 @@
     width: 15%;
     background-color: rgb(231, 185, 207);
 }
+
+.product-instruction {
+    width: 90%;
+    padding-bottom: 40px;
+}
+
+.instruction-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.instruction-img {
+    width: 100%;
+}
+
+.instruction-img-1 {
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/product/secundario.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.instruction-img-2 {
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/product/secundario2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
