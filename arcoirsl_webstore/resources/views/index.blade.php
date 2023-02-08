@@ -13,6 +13,7 @@
     <div class="container">
         @include('index.index')
     </div>
+    
     @include('partials._footer')
 </body>
 

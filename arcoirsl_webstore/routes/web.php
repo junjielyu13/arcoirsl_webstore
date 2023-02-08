@@ -20,3 +20,9 @@ Route::get('/home', 'App\Http\Controllers\homeController@index')->name("/home");
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+Route::get('/product', function () {
+    return view('product');
+});
+
+
