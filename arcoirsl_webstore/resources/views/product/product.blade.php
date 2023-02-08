@@ -1,7 +1,13 @@
 {{-- <div class="container"> --}}
+
+
 <div class="back">
-    <i class="fa-solid fa-arrow-left"></i>
+    <a href="{{ route('/home') }}">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
 </div>
+
+
 
 <div class="product-context">
     <div class="product-img">
