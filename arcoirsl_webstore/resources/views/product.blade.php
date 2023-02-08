@@ -11,7 +11,7 @@
     @include('partials._nav')
 
     <div class="container">
-        @yield('product.product')
+        @include('product.product')
     </div>
 
     @include('partials._footer')
