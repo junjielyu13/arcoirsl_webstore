@@ -88,12 +88,6 @@
     cursor: pointer;
 }
 
-.container {
-    height: 300px;
-    width: 100%;
-    background-color: --context-color;
-}
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -188,6 +182,7 @@
     color: #807b73;
 }
 
+
 .container-404 {
     width: 100%;
     position: absolute;
@@ -233,4 +228,5 @@
 
 .container-404 a.hover{
     background:#80abb0;
+
 }

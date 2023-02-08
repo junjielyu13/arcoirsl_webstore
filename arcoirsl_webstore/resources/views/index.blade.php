@@ -11,11 +11,10 @@
     @include('partials._nav')
 
     <div class="container">
-        @yield('content')
+        @include('index.index')
     </div>
-
+    
     @include('partials._footer')
-
 </body>
 
 </html>

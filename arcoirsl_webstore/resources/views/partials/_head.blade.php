@@ -5,10 +5,7 @@
 
     <title>{{ config('app.name') }}</title>
 
-    {{-- 
-    <link href="../css/app.css" rel="stylesheet">
-    <link href="../css/normalize.css" rel="stylesheet">
-    <link href="../css/tailwind.css" rel="stylesheet"> --}}
+
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/frontend.css?v=1') }}" media="all" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/custom.css?v=4') }}" media="all" />
@@ -25,14 +22,21 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
     @stack('style')
+    @stack('script')
 
     <link rel="shortcut icon" href="{{ asset('frontend/images/fav-icon.png') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/product.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/normalize.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/tailwind.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/swiper-bundle.min.css') }}" />
 
     <script src="https://kit.fontawesome.com/799073a1c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://kit.fontawesome.com/799073a1c9.css" crossorigin="anonymous" />
+
+    <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/index.js') }}"></script>
 
 </head>
