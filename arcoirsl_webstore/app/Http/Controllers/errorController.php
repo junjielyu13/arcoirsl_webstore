@@ -7,7 +7,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
-class homeController extends BaseController
+class errorController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
@@ -17,15 +17,6 @@ class homeController extends BaseController
      */
     public function index()
     {
-        return view('index');
-    }
-
-    /**
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function welcome()
-    {
-        return view('welcome');
+        return view('errors.404');
     }
 }

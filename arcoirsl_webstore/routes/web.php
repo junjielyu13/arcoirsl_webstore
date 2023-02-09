@@ -14,13 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\homeController@index')->name("/");
+
 Route::get('/home', 'App\Http\Controllers\homeController@index')->name("/home");
+
+Route::get('/welcome','App\Http\Controllers\homeController@welcome')->name("/welcome"); 
+
 Route::get('/product', 'App\Http\Controllers\productController@index')->name("/product");
 
+Route::get('/404', 'App\Http\Controllers\errorController@index')->name("/404");
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
 
 
 
