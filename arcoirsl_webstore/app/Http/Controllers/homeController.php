@@ -19,4 +19,13 @@ class homeController extends BaseController
     {
         return view('index');
     }
+
+    /**
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function welcome()
+    {
+        return view('welcome');
+    }
 }
