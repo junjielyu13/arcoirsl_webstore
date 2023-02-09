@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="{{ asset('frontend/images/fav-icon.png') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/product.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/product.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/normalize.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/tailwind.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/swiper-bundle.min.css') }}" />
