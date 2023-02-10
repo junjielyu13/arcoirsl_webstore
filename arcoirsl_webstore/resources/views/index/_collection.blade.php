@@ -6,7 +6,7 @@
     </div>
     <div class="collection-box">
         <div class="collection-row">
-            <a href="{{ route('/product') }}">
+            <a href="{{ route('/product/1') }}">
                 <div class="item">
                     <div class="item-img"></div>
                     <div class="item-info">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </a>
-            <a href="{{ route('/product') }}">
+            <a href="{{ route('/product/') }}">
                 <div class="item">
                     <div class="item-img"></div>
                     <div class="item-info">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </a>
-            <a href="{{ route('/product') }}">
+            <a href="{{ route('/product/3') }}">
                 <div class="item">
                     <div class="item-img"></div>
                     <div class="item-info">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
             </a>
-            <a href="{{ route('/product') }}">
+            <a href="{{ route('/product/4') }}">
                 <div class="item">
                     <div class="item-img"></div>
                     <div class="item-info">

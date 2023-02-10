@@ -25,7 +25,7 @@
 
     <div class="product-info">
         <div class="basic-info">
-            <div class="product-info-title">Heat Wave</div>
+            <div class="product-info-title">{{ $product_title }}</div>
             <div class="product-info-description">
                 [Personalized] Customizable and reusable false nails
                 with different sizes available.
