@@ -152,3 +152,33 @@
     align-items: center; /* vertical-align to center */
     justify-content: center; /* [    xxx    ] */
 }
+
+/* container-option-2 */
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: pink;
+}
+
+.product-container-col-sm {
+    width: 15%;
+    height: 100px;
+    background-color: red;
+}
+
+.product-container-col-md {
+    width: 21%;
+    height: 100px;
+    background-color: blue;
+}
+
+.product-container-col-bg {
+    width: 28%;
+    height: 100px;
+    background-color: green;
+}
