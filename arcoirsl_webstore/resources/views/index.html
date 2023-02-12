@@ -23,6 +23,7 @@
             crossorigin="anonymous"
         ></script>
         <script src="../../public/js/swiper-bundle.min.js"></script>
+        <script src="../../public/js/jquery.min.js"></script>
     </head>
 
     <body>
@@ -46,92 +47,119 @@
         </header>
 
         <nav class="nav">
-            <div class="new nav-select">&nbsp NEW &nbsp</div>
-            <div class="sale">&nbsp SALE &nbsp</div>
-            <div class="option1">&nbsp SALE1 &nbsp</div>
-            <div class="option2">&nbsp SALE2 &nbsp</div>
-            <div class="option3">&nbsp SALE3 &nbsp</div>
+            <div class="new nav-select" onclick="navshow(1)">
+                <button>&nbsp NEW &nbsp</button>
+            </div>
+            <div class="sale" onclick="navshow(2)">
+                <button>&nbsp SALE &nbsp</button>
+            </div>
+            <div class="option1">
+                <button>&nbsp SALE1 &nbsp</button>
+            </div>
+            <div class="option2">
+                <button>&nbsp SALE2 &nbsp</button>
+            </div>
+            <div class="option3">
+                <button>&nbsp SALE3 &nbsp</button>
+            </div>
         </nav>
 
         <div class="container">
-            <div class="container-swiper">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide slide-main">
-                            <div class="slide-button">
-                                <p class="slide-button-text">
+            <div class="container-option-1">
+                <div class="container-swiper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-main">
+                                <div class="slide-button">
+                                    <p class="slide-button-text">
+                                        Order now
+                                        <i
+                                            class="fa-solid fa-chevron-right"
+                                        ></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-second">
+                                <div class="slide-button">
+                                    <p class="slide-button-text">Order now ></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-white"></div>
+                    </div>
+                    <div class="swiper-button-next swiper-white"></div>
+                    <div class="swiper-button-prev swiper-white"></div>
+                </div>
+
+                <div class="container-collection">
+                    <div class="collection-title">
+                        <span class="collection-title-text">
+                            LATEST COLLECTION
+                        </span>
+                    </div>
+                    <div class="collection-box">
+                        <div class="collection-row">
+                            <div class="item">
+                                <div class="item-img"></div>
+                                <div class="item-info">
+                                    <div class="item-info-name">HEAT WAVE</div>
+                                    <div class="item-info-price">20 €</div>
+                                </div>
+                                <div class="item-button">
                                     Order now
                                     <i class="fa-solid fa-chevron-right"></i>
-                                </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide slide-second">
-                            <div class="slide-button">
-                                <p class="slide-button-text">Order now ></p>
+                            <div class="item">
+                                <div class="item-img"></div>
+                                <div class="item-info">
+                                    <div class="item-info-name">HEAT WAVE</div>
+                                    <div class="item-info-price">20 €</div>
+                                </div>
+                                <div class="item-button">
+                                    Order now
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-img"></div>
+                                <div class="item-info">
+                                    <div class="item-info-name">HEAT WAVE</div>
+                                    <div class="item-info-price">20 €</div>
+                                </div>
+                                <div class="item-button">
+                                    Order now
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-img"></div>
+                                <div class="item-info">
+                                    <div class="item-info-name">HEAT WAVE</div>
+                                    <div class="item-info-price">20 €</div>
+                                </div>
+                                <div class="item-button">
+                                    Order now
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination swiper-white"></div>
                 </div>
-                <div class="swiper-button-next swiper-white"></div>
-                <div class="swiper-button-prev swiper-white"></div>
+            </div>
+            <div class="container-option-2">
+                <div class="product-container">
+                    <div class="product-container-col-sm"></div>
+                    <div class="product-container-col-md"></div>
+                    <div class="product-container-col-bg"></div>
+                    <div class="product-container-col-md"></div>
+                    <div class="product-container-col-sm"></div>
+                </div>
             </div>
 
-            <div class="container-collection">
-                <div class="collection-title">
-                    <span class="collection-title-text">
-                        LATEST COLLECTION
-                    </span>
-                </div>
-                <div class="collection-box">
-                    <div class="collection-row">
-                        <div class="item">
-                            <div class="item-img"></div>
-                            <div class="item-info">
-                                <div class="item-info-name">HEAT WAVE</div>
-                                <div class="item-info-price">20 €</div>
-                            </div>
-                            <div class="item-button">
-                                Order now
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-img"></div>
-                            <div class="item-info">
-                                <div class="item-info-name">HEAT WAVE</div>
-                                <div class="item-info-price">20 €</div>
-                            </div>
-                            <div class="item-button">
-                                Order now
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-img"></div>
-                            <div class="item-info">
-                                <div class="item-info-name">HEAT WAVE</div>
-                                <div class="item-info-price">20 €</div>
-                            </div>
-                            <div class="item-button">
-                                Order now
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item-img"></div>
-                            <div class="item-info">
-                                <div class="item-info-name">HEAT WAVE</div>
-                                <div class="item-info-price">20 €</div>
-                            </div>
-                            <div class="item-button">
-                                Order now
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="container-option-3"></div>
+            <div class="container-option-4"></div>
+            <div class="container-option-5"></div>
         </div>
 
         <footer class="footer">
@@ -200,6 +228,29 @@
                     prevEl: ".swiper-button-prev",
                 },
             });
+
+            function navshow(option) {
+                let container_1 = document.querySelector(".container-option-1");
+                let new_nav = document.querySelector(".new");
+                let container_2 = document.querySelector(".container-option-2");
+                let sale_nav = document.querySelector(".sale");
+                if (option == 1) {
+                    container_1.style.display = "flex";
+                    container_2.style.display = "none";
+                    if (!new_nav.classList.contains("nav-select")) {
+                        new_nav.classList.add("nav-select");
+                        sale_nav.classList.remove("nav-select");
+                    }
+                } else {
+                    container_2.style.display = "flex";
+                    container_1.style.display = "none";
+
+                    if (!sale_nav.classList.contains("nav-select")) {
+                        sale_nav.classList.add("nav-select");
+                        new_nav.classList.remove("nav-select");
+                    }
+                }
+            }
         </script>
     </body>
 </html>
