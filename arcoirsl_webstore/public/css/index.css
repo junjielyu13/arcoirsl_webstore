@@ -173,8 +173,6 @@
     justify-content: center; /* [    xxx    ] */
 }
 
-/* container-option-2 */
-
 .product-container {
     display: flex;
     flex-direction: row;
