@@ -255,6 +255,9 @@
     justify-content: center;
 }
 
-.container-option-1 {
+.container-option-1,
+.container-option-3,
+.container-option-4,
+.container-option-5 {
     display: none;
 }
