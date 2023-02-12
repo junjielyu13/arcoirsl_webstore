@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -16,8 +17,10 @@ class homeController extends BaseController
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('index');
+    {   
+        $topProducts = Product::all()->take(10);
+        $allProducts = Product::all();
+        return view('index', compact($topProducts, $allProducts));
     }
 
     /**
