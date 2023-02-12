@@ -47,7 +47,7 @@
         </header>
 
         <nav class="nav">
-            <div class="nav_bar nav-select" onclick="navshow(1)">
+            <div class="new nav-select" onclick="navshow(1)">
                 <button>&nbsp NEW &nbsp</button>
             </div>
             <div class="sale" onclick="navshow(2)">
@@ -231,7 +231,7 @@
 
             function navshow(option) {
                 let container_1 = document.querySelector(".container-option-1");
-                let new_nav = document.querySelector(".nav_bar");
+                let new_nav = document.querySelector(".new");
                 let container_2 = document.querySelector(".container-option-2");
                 let sale_nav = document.querySelector(".sale");
                 if (option == 1) {
