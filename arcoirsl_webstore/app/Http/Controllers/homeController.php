@@ -18,9 +18,9 @@ class homeController extends BaseController
      */
     public function index()
     {   
-        $topProducts = Product::all()->take(10);
+        $topProducts = Product::all()->take(4);
         $allProducts = Product::all();
-        return view('index', compact($topProducts, $allProducts));
+        return view('index', ['topProducts' => $topProducts,'allProducts' => $allProducts]);
     }
 
     /**
