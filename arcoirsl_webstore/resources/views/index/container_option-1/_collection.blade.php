@@ -6,58 +6,21 @@
     </div>
     <div class="collection-box">
         <div class="collection-row">
-            <a href="{{ route('/product') }}">
-                <div class="item">
-                    <div class="item-img"></div>
-                    <div class="item-info">
-                        <div class="item-info-name">HEAT WAVE</div>
-                        <div class="item-info-price">20 €</div>
+            @foreach ($topProducts as $product)
+                <a href="{{ route('/product', $product->external_product_id) }}">
+                    <div class="item">
+                        <div class="item-img"></div>
+                        <div class="item-info">
+                            <div class="item-info-name">{{ $product->item_name }}</div>
+                            <div class="item-info-price">{{ $product->standard_price }}€</div>
+                        </div>
+                        <div class="item-button">
+                            Order now
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
                     </div>
-                    <div class="item-button">
-                        Order now
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="{{ route('/product') }}">
-                <div class="item">
-                    <div class="item-img"></div>
-                    <div class="item-info">
-                        <div class="item-info-name">HEAT WAVE</div>
-                        <div class="item-info-price">20 €</div>
-                    </div>
-                    <div class="item-button">
-                        Order now
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="{{ route('/product') }}">
-                <div class="item">
-                    <div class="item-img"></div>
-                    <div class="item-info">
-                        <div class="item-info-name">HEAT WAVE</div>
-                        <div class="item-info-price">20 €</div>
-                    </div>
-                    <div class="item-button">
-                        Order now
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="{{ route('/product') }}">
-                <div class="item">
-                    <div class="item-img"></div>
-                    <div class="item-info">
-                        <div class="item-info-name">HEAT WAVE</div>
-                        <div class="item-info-price">20 €</div>
-                    </div>
-                    <div class="item-button">
-                        Order now
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-            </a>
+                </a>
+            @endforeach
         </div>
     </div>
 </div>

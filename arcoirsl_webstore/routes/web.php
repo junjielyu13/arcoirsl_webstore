@@ -19,9 +19,10 @@ Route::get('/home', 'App\Http\Controllers\homeController@index')->name("/home");
 
 Route::get('/welcome','App\Http\Controllers\homeController@welcome')->name("/welcome"); 
 
-Route::get('/product', 'App\Http\Controllers\productController@index')->name("/product");
+Route::get('/product/{product_id}', 'App\Http\Controllers\productController@getProduct')->name("/product");
 
 Route::get('/404', 'App\Http\Controllers\errorController@index')->name("/404");
+
 
 
 

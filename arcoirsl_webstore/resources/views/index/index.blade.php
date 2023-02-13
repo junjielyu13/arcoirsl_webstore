@@ -9,13 +9,10 @@
 
 
 <div class="container-option-3">
-    ...
 </div>
 
 <div class="container-option-4">
-    ...
 </div>
 
 <div class="container-option-5">
-    ...
 </div>

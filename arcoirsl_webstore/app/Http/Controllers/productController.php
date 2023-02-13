@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -15,8 +16,18 @@ class productController extends BaseController
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($product_id)
     {
-        return view('product');
+        $product = Product::find($product_id);
+        $product_title = $product->item_name;
+
+        return view('product', compact('product_title'));
+    }
+
+    public function getProduct($product_id){
+        $product = Product::find($product_id);
+        $product_title = $product->item_name;
+
+        return view('product', compact('product_title'));
     }
 }

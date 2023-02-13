@@ -241,23 +241,3 @@
 .container-text a.hover {
     background: #80abb0;
 }
-
-.container-option-1,
-.container-option-2,
-.container-option-3,
-.container-option-4,
-.container-option-5 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-option-1,
-.container-option-3,
-.container-option-4,
-.container-option-5 {
-    display: none;
-}
