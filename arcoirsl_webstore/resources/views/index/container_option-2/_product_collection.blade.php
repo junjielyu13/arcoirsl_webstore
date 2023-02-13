@@ -12,9 +12,10 @@
                     $imgType = 'product-bg';
                 }
             @endphp
-
             <div class="{{ $imgType }}">
-                <img src="{{ $allProducts[$i]->main_image_url }}" alt="" srcset="" />
+                <a href="{{ route('/product', $allProducts[$i]->external_product_id) }}">
+                    <img src="{{ $allProducts[$i]->main_image_url }}" alt="" srcset="" />
+                </a>
             </div>
         @endfor
     </div>
@@ -33,10 +34,13 @@
             @endphp
 
             <div class="{{ $imgType }}">
-                <img src="{{ $allProducts[$i]->main_image_url }}" alt="" srcset="" />
+                <a href="{{ route('/product', $allProducts[$i]->external_product_id) }}">
+                    <img src="{{ $allProducts[$i]->main_image_url }}" alt="" srcset="" />
+                </a>
             </div>
         @endfor
     </div>
+
     <div class="product-container-col-bg">
         @for ($i = 20; $i < 30; $i++)
             @php
@@ -52,7 +56,9 @@
             @endphp
 
             <div class="{{ $imgType }}">
-                <img src="{{ $allProducts[$i]->main_image_url }}" alt="" srcset="" />
+                <a href="{{ route('/product', $allProducts[$i]->external_product_id) }}">
+                    <img src="{{ $allProducts[$i]->main_image_url }}" alt="" srcset="" />
+                </a>
             </div>
         @endfor
     </div>
@@ -69,9 +75,10 @@
                     $imgType = 'product-bg';
                 }
             @endphp
-
             <div class="{{ $imgType }}">
-                <img src="{{ $allProducts[$i]->main_image_url }}" alt="" srcset="" />
+                <a href="{{ route('/product', $allProducts[$i]->external_product_id) }}">
+                    <img src="{{ $allProducts[$i]->main_image_url }}" alt="" srcset="" />
+                </a>
             </div>
         @endfor
     </div>
@@ -88,9 +95,10 @@
                     $imgType = 'product-bg';
                 }
             @endphp
-
             <div class="{{ $imgType }}">
-                <img src="{{ $allProducts[$i]->main_image_url }}" alt="" srcset="" />
+                <a href="{{ route('/product', $allProducts[$i]->external_product_id) }}">
+                    <img src="{{ $allProducts[$i]->main_image_url }}" alt="" srcset="" />
+                </a>
             </div>
         @endfor
     </div>

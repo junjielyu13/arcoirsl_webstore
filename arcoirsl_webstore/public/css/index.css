@@ -224,9 +224,9 @@
     height: 360px;
 }
 
-.product-sm img,
-.product-md img,
-.product-bg img {
+.product-sm a img,
+.product-md a img,
+.product-bg a img {
     width: 100%;
     height: 100%;
 }

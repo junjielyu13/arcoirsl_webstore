@@ -26,12 +26,12 @@
 
     <link rel="shortcut icon" href="{{ asset('frontend/images/fav-icon.png') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/product.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/normalize.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/tailwind.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/index.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/app.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/product.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/normalize.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/tailwind.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/swiper-bundle.min.css') }}" />
 
     <script src="https://kit.fontawesome.com/799073a1c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://kit.fontawesome.com/799073a1c9.css" crossorigin="anonymous" />
