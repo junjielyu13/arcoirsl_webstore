@@ -11,3 +11,5 @@
 - vendor: `composer install`
 
 - laravel: `php artisan ...`
+
+- bash: `sudo bash run.sh`
